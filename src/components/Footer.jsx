@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="border-b px-8 py-3">
         <CountryLookup />
       </div>
-      <div className="flex flex-xol sm:flex-row justify-between items-center px-8 py-3 space-y-7 sm:space-y-0">
+      <div className="flex flex-col sm:flex-row justify-between items-center px-8 py-3 space-y-7 sm:space-y-0">
         <ul className="flex items-center space-x-6">
           <li className="link">About</li>
           <li className="link">Advertising</li>

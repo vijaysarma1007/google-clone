@@ -5,7 +5,8 @@ const API_KEY = process.env.API_KEY;
 const CONTEXT_KEY = process.env.CONTEXT_KEY;
 
 export default async function ImageSearchPage({ searchParams }) {
-  const response = await fetch(`https://www.googleapis.com/customsearch/v1?key=${API_KEY}&cx=${CONTEXT_KEY}&q=${searchParams.searchTerm}&searchType=image`);
+  const startIndex = searchParams.start || 0;
+  const response = await fetch(`https://www.googleapis.com/customsearch/v1?key=${API_KEY}&cx=${CONTEXT_KEY}&q=${searchParams.searchTerm}&searchType=image&start=${startIndex}`);
 
   if (!response.ok) {
     throw new Error("Something went wrong");

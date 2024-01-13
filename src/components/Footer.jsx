@@ -19,6 +19,7 @@ export default function Footer() {
           <li className="link">Settings</li>
         </ul>
       </div>
+      <p className="w-full text-center">*This webpage is developed by Srirangam Vijay Mohan, for educational purposes only</p>
     </footer>
   );
 }
